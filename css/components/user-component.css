@@ -7,7 +7,12 @@
   display: flex;
   align-items: center;
 }
-
+.user-component.friend{
+  margin: 10px 0px;
+}
+.user-component.friend:last-child{
+  animation: colorChange 1s ease-in-out infinite;
+}
 .user-component__avatar {
   width: 70px;
   height: 70px;
@@ -51,4 +56,23 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: tomato;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: red;
+  }
+  75%
+  {
+    background-color: rgb(110, 254, 0);
+  }
+  100% {
+    background-color: var(--yellow);
+  }
 }
